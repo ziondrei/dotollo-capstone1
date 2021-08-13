@@ -6,6 +6,11 @@
 	font-family: 'Jost', sans-serif;
 	
 }
+#portfolio {
+	background-color: #F8E6CB;
+}
+
+
 
 nav {
 	background-color: #26648E;
@@ -28,6 +33,7 @@ nav {
 }
 
 #contact {
+	background-color: #64C4C3;
 	padding-top: 70px;
 	margin: auto;
 	min-height: 100vh;
@@ -44,12 +50,13 @@ nav {
 	color: white;
 	padding-top: 200px;
 	padding-bottom: 100px;
+	/*min-width: 100%;*/
 	min-height: 100vh;
 	background: linear-gradient(to top, rgba(100, 196, 195, 0.5) 0%,rgba(38, 100, 142,1) 100%), url(images/bg.jpg) no-repeat center center ;
 	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
 }
 
@@ -117,14 +124,11 @@ footer {
 	width: 50%;
 }
 
-/*@media (min-width: 768px) { *//*
-	body {
-		margin: auto;
-	}
+@media (min-width: 320px) { 
+	.progress {
+	width: 100%;
 }
 
-@media (min-width: 992px) {
-	body {
-		margin: auto;
-	}
-}*/
+}
+
+
