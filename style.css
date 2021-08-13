@@ -116,3 +116,15 @@ footer {
 .skill-9 {
 	width: 50%;
 }
+
+/*@media (min-width: 768px) { *//*
+	body {
+		margin: auto;
+	}
+}
+
+@media (min-width: 992px) {
+	body {
+		margin: auto;
+	}
+}*/
