@@ -16,12 +16,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+    </svg>
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>Melanie's Page</title>
   </head>
   <body>
+
+    <!-- Start of Navbar -->
      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,30 +35,31 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">portfolio</a>
+            <a class="nav-link" href="#">home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">about</a>
+            <a class="nav-link" href="#about">about</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">contact</a>
+            <a class="nav-link" href="#contact">contact</a>
           </li>
          </ul>
-         <ul>
+         <!-- <ul>
            <li>
              <i class="fa fa-facebook"></i>
            </li>
-         </ul>
+         </ul> -->
       </div>
     </nav>
+    <!-- End of Navbar -->
 
+    <!-- Start of Jumbotron -->
 <div class="container-fluid">
   <div class="row">
-    
-
     <div class="jumbotron col-12 text-center">
       <p class="display-4">Hi, I'm Melanie Dotollo!</p>
       <!-- <p class="display-4">some people call me melai. I am a web designer</p> -->
@@ -63,102 +69,177 @@
       <br>
       Raised by the 90's
       <br>
-      2 years of experience
+      2 years of Experience
       <br>
-      now available for you.
+      Now available for you.
       </p>
       <hr class="my-4">
       <p>Want to learn more about me?</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      <a class="btn btn-primary" href="#about" role="button">Learn more</a>
     </div>
       </div>
 </div>
+  <!-- End of Jumbotron -->
+
+  <!-- Start of About -->
+  <div id="about">
+<div class="container">
+    <div class="row">
+      <div class="col-12 col-md-7 order-1 order-md-1">
+        <h1>Me, Myself and I</h1>
+        <p>
+          I’m Melanie Dotollo. Many years ago, I began working on how the websites on internet works. Since then, I've been designing and building websites that are simple, elegant, and unique. From video effects and animation to graphics and web design, I've done it all. I've studied and attempted to master a variety of languages, including HTML, CSS, PHP, and others.
+        </p>
+        <p>
+            I've also worked on some of the testing tools such as Pentaho and Soap UI. I've met a lot of people through my previous job, and they've taught me a lot. When I design and build, I try to be original and push the limits. So now you have a basic understanding of who I am.
+        </p>
+        <p>
+            Check out my <a href="#portfolio">portfolio</a>, or if you're truly interested, send me an email through the <a href="#contact">contact</a> form.
+        </p>
+      </div>
+    
+
+    
+      <div class="col-12 col-md-5 order-2 order-md-2 text-center">
+        <img src="images/me.png" class="img-fluid" alt="My picture" width="50%">
+      </div>
+        <!-- End of About -->
+    </div>
+  </div>
+
+          <!-- Start of Skills -->
+     <!-- <div id="skill"> -->
+  <div class="container">
+        <h3 class="text-center">Skills</h3>
+      <div class="row justify-content-around">
+        <div class="col-12 col-md-3 order-3 order-md-3">       
+
+        <img src="images/logo-css3.png" class="img-fluid" width="60">
+        <div class="progress">
+         <div class="progress-bar progress-bar-striped skill-1" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <img src="images/logo-javascript.png" class="img-fluid" width="60">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped skill-2 bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <img src="images/logo-nodejs.png" class="img-fluid" width="60">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped skill-4 bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        
+      </div>
+      <div class="col-12 col-md-3 order-4 order-md-4">
+         <img src="images/logo-react.png" class="img-fluid" width="60">
+        <div class="progress">
+         <div class="progress-bar progress-bar-striped skill-6" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <img src="images/logo-heroku.png" class="img-fluid" width="60">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped skill-7 bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <img src="images/logo-git.png" class="img-fluid" width="60">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped skill-8 bg-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+
+    <div class="col-12 col-md-3 order-5 order-md-5">
+      <img src="images/logo-sublime-text-3.png" class="img-fluid" width="60">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped skill-9 bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+
+      <img src="images/logo-expressjs.png" class="img-fluid" width="60">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped skill-5 bg-danger" role="progressbar"  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+
+  <!-- End of Skills -->
+
+<div id="portfolio">
+<!-- Start of Portfolio -->
+    <div class="container portfolio">
+      <h1>Portfolio</h1>
+      <div class="row justify-content-between">
+
+        <div class="card col-12 col-md-4 order-1" style="width: 18rem;">
+          <img src="images/fe.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Front-End Development</h5>
+            <p class="card-text">The creation of user-friendly webpages, God of screen, visuals and functionality, able to creatively solve user-centered issues.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <div class="card col-12 col-md-4 order-1" style="width: 18rem;">
+          <img src="images/be.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Back-End Development</h5>
+            <p class="card-text">The building and maintaining of the web server, application and database, ensuring frontend operations are smooth.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <div class="card col-12 col-md-4 order-1" style="width: 18rem;">
+          <img src="images/fs.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Full Stack Development</h5>
+            <p class="card-text">Mostly backend work, but are also adept at frontend languages to manipulate how the site looks on the user's end.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+    <!-- End of Portfolio -->
+
+<!-- Start of Contacts -->
+<div id="contact">
+<div class="container contact">
+  <h1 class="text-center">Get in touch</h1>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-4">
+      
+   <!-- <button type="button" class="btn btn-outline-secondary">secondary</button> -->
+
+   <form>
+     <div class="form-group">
+       <label for="exampleInputEmail1">Email address</label>
+       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+     </div>
+     <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+     <!-- <div class="form-group form-check">
+       <input type="checkbox" class="form-check-input" id="exampleCheck1">
+       <label class="form-check-label" for="exampleCheck1">Check me out</label>
+     </div> -->
+     <button type="submit" class="btn btn-primary">Send</button>
+   </form>
+
+    </div>
+    <div class="col-12 col-md-4 text-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15463.710345879717!2d121.09083234999997!3d14.3156389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d9c04473a9fb%3A0x989b02d0723ee1a2!2zMTTCsDE5JzIyLjMiTiAxMjHCsDA2JzAxLjciRQ!5e0!3m2!1sen!2sph!4v1628815744431!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+   <!-- End of Contacts -->
 
 
 
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-
-
-
-<!-- ww
-
- -->
-
-
-
-<!-- 
-
-I’m a Full-Stack Developer located in Laguna. I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
-
-Well-organised person, problem solver, independent employee with high attention to detail. Fan of MMA, outdoor activities, TV series and English literature. A family person and father of two fractious boys,
-
-Interested in the entire frontend spectrum and working on ambitious projects with positive people.
-
-Let’s make something special.
- -->
-
-
-
-
-
-
+</div>
 
 
 
@@ -169,4 +250,11 @@ Let’s make something special.
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
   </body>
+
+  <footer>
+        <div class="footer-bottom">
+          <p>© 2021 Melanie Dotollo. All Rights Reserved</p>
+        </div>
+</footer>
+
 </html>
